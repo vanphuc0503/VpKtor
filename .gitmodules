@@ -1,0 +1,3 @@
+[submodule "KtorServer"]
+	path = KtorServer
+	url = https://github.com/vanphuc0503/VpKtor/KtorServer
