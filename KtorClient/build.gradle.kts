@@ -17,8 +17,6 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation("io.ktor:ktor-client-core:$ktor_version")
     implementation("io.ktor:ktor-client-cio:$ktor_version")
-    implementation("io.ktor:ktor-client-websockets:$ktor_version")
-    implementation("org.slf4j:slf4j-android:1.7.36")
 }
 
 tasks.test {
@@ -31,8 +29,4 @@ tasks.withType<KotlinCompile> {
 
 application {
     mainClass.set("MainKt")
-}
-
-tasks.named<JavaExec>("run") {
-    standardInput = System.`in`
 }
